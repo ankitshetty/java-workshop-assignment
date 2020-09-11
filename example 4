@@ -19,3 +19,20 @@ public void areavolcon(float r, float l){
 	
 }
 }
+
+
+package Package1;
+
+public class mainclass {
+
+	public static void main(String[] args) {
+		
+		AreaVolume obj = new AreaVolume();
+		obj.areaVolcyl(2,2);
+		obj.areavolcon(2,2);
+		
+		
+
+	}
+
+}
