@@ -1,0 +1,33 @@
+package Package2;
+
+import java.util.Scanner;
+abstract class Area {
+	 double area;
+	 abstract void AreaCompute();
+	 
+}
+class circle extends Area{
+	double r = 2;
+	void AreaCompute() {
+		area = r*r;
+		System.out.println("area of circle is"+area);
+		
+		
+	}
+}
+class square extends Area{
+	double s = 5;
+	void AreaCompute() {
+		area = s*s;
+		System.out.println("area of square is"+area);
+		
+	}
+}
+public class mainn {
+	public static void main(String [] args) {
+		circle c = new circle();
+		c.AreaCompute();
+		square s = new square();
+		s.AreaCompute();
+	}
+}
