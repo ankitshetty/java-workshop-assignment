@@ -1,0 +1,21 @@
+package Package1;
+import java.util.Scanner;
+
+public class AreaVolume {
+public void areaVolcyl(int r, int h) {
+	float a = (float) (2*3.14*r*h);
+	System.out.println("area of cylinder is"+a);
+	float v = (float)(3.14*r*r*h);
+	System.out.println("volume of a cylinder is "+v);
+	
+	
+}
+public void areavolcon(float r, float l){
+	float A = (float) (3.14*r*l);
+	System.out.println("area of a cone is"+A);
+	float V = (float)(3.14*r*(l+r));
+	System.out.println("vol of cone is"+V);
+	
+	
+}
+}
