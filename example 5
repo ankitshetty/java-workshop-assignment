@@ -1,0 +1,48 @@
+package Package1;
+import java.util.Scanner;
+import java.lang.ArithmeticException;
+import java.lang.ArrayIndexOutOfBoundsException;
+import java.lang.NumberFormatException;
+
+
+
+public class exceptionEx {
+
+	public static void main(String[] args) {
+		try {
+			int a = 5/0;
+			
+		}
+		catch (ArithmeticException ex) {
+			System.out.println("arithmetic exception occcured");
+		}
+		finally {
+			System.out.println("we are in finally block");
+			
+		}
+		try {
+			int arr[] = new int[4];
+			arr[4]=5;
+			
+		}
+		catch(ArrayIndexOutOfBoundsException e) {
+			System.out.println("array out of bound exception occured");
+		}
+		finally
+		{
+			System.out.println("final block");
+		}
+		try {
+			int aa = Integer.parseInt("aaaa");
+			
+		}
+		catch(NumberFormatException n) {
+			System.out.println("number format exception occured");
+			
+		}
+		finally{
+			System.out.println("final");
+		}
+	}
+
+}
