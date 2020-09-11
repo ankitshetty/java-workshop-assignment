@@ -1,0 +1,48 @@
+package example;
+import java.util.Scanner;
+ import java.io.*;
+interface	Figure {
+	public void area();
+	
+	
+}
+class Rectangle implements Figure{
+ public	void area(int l, int b) {
+		int a = l*b;
+		System.out.println("area of rectangle is"+a);
+		
+		
+		
+	}
+
+
+
+	
+	}
+class Triangle implements Figure{
+	public void area (double d, double e) {
+		float a = (float) (0.5*d*e);
+		System.out.println("area of triangle is"+a);
+		
+	}
+
+
+	
+	
+}
+
+public class interfaceEx {
+
+	public static void main(String[] args) {
+		
+		Rectangle obj1 = new Rectangle();
+		obj1.area(2,2);
+		Triangle obj2 = new Triangle();
+		obj2.area(2.2,2.2);
+		
+		
+		
+
+	}
+
+}
