@@ -1,0 +1,42 @@
+
+import java.util.Scanner;
+
+public class area {
+	public static float Area(float r) {
+		return (float)3.14*r*r;
+		
+		
+	}
+	public static int Area(int s) {
+		return s*s;
+	}
+	public static int Area(int l, int b) {
+		return l*b;
+		
+	}
+	public static void main(String [] args) {
+		System.out.println("enter radius of circle");
+		Scanner sc = new Scanner(System.in);
+		float R = sc.nextFloat();
+		float areaCircle = Area ( R);
+		System.out.println("enter side of square");
+		
+		int  S = sc.nextInt();
+		int areaSquare = Area ( S);
+		System.out.println("enter length and breadth of square");
+		int L = sc.nextInt();
+		int B = sc.nextInt();
+		int areaRect = Area ( L,B);
+		System.out.println("area of circle is "+areaCircle);
+		System.out.println("area  of square is "+areaSquare);
+		System.out.println("are of rectange is " +areaRect);
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
